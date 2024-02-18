@@ -103,36 +103,34 @@
 <!-- P.H Paribahan Section -->
 
 <div class="text-center mt-10 mb-10">
-  <h1>P.H Paribahan</h1>
+  <h1>Green LIne Service</h1>
   <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
 </div>
 <section  class="border bg-[#F7F8F8] h-[500px]">
  <div class="flex">
   
-  <!-- seat left div  -->
-  <div class="flex">
-    <div class="flex px-28 w-[808px] ml-0">
-      <img class="w-16 h-12" src="./images/bus-logo.png" alt="" srcset="">
-      <h1>Greenline Paribahan <br>Coach-009-WEB ! AC_Business</h1>
-      <p></p>
-    </div>
-  </div>
-  <button class="btn"><img src="./images/seat-green-filled.png" alt="" srcset="">0 seat left</button>
-<div><img src="./images/info-devider.png" alt="" srcset=""></div>
-<div class="ml-32">
+ 
+<div id="poribahan-div" class="flex">
+  <img class="w-16 h-12 mr-10" src="./images/bus-logo.png" alt="" srcset="">
+  <h1 class="text-2xl font-bold">Greenline Paribahan <br> <span class="font-normal text-[15px]">Coach-009-WEB ! AC_Business </span></h1>
+  
+</div>
+ <img class="h-[418px]" src="./images/info-devider.png" alt="" srcset="">
+<!-- money count  -->
+<div id="per-seat-money-count" class="ml-32">
   <img src="./images/fare.png" alt="" srcset="">
-  <h1>550 Taka</h1>
-  <p>Per Seat</p>
+  <h1 class="font-extrabold">550 Taka</h1>
+  <p class="font-semibold">Per Seat</p>
 </div>
 
 
  </div>
 
  <!-- form  -->
- <div class="">
+ <div class="relative bottom-52">
   <form action="#">
-    <input class="w-[808px]" type="text" placeholder="Route"> <br>
-    <input class="w-[808px]" type="text" placeholder="Departure Time"><br>
+    <input class="w-[708px] h-[64] p-4 border" type="text" placeholder="Route"> <br>
+    <input class="w-[708px] h-[64] p-4 border" type="text" placeholder="Departure Time"><br>
     <button class="btn">Boarding Point - Laxmipur</button>
     <button class="btn">Dropping Point - Bogura</button>
     <button class="btn">Est. Time - 11 Hour</button>
@@ -186,50 +184,34 @@
      
   </div>
   <div class=" discount-calculate">
-    <h1 class="font-extrabold">Select Your Seat</h1>
-    <div>
-      <div class="overflow-x-auto">
-        <table class="table">
-          <!-- head -->
-          <thead>
-            <tr>
-              <th>Class</th>
-              <th>Seat</th>
-              <th>Price</th>
-               
-            </tr>
-          </thead>
-          <tbody>
-            <!-- row 1 -->
-            <tr class="bg-base-200">
-              <td>C2</td>
-              <td>Economoy</td>
-              <td>550</td>
-            </tr>
-            <!-- row 2 -->
-            <tr>
-              <td>C3</td>
-              <td>Economoy</td>
-              <td>500</td>
-            </tr>
-            <!-- row 3 -->
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+    <h1 class="font-extrabold mb-10">Select Your Seat</h1><hr>
+    <div> 
+      
+      <div class="flex justify-between w-[433px] font-extrabold text-xl">
+        <p>Seat</p>
+        <p>Class</p>
+        <p>Price</p>
+      </div> <hr>
+      <div class="flex justify-between w-[433px] font-extrabold font-semibold">
+        <p>C2</p>
+        <p>Economoy</p>
+        <p>550</p>
       </div>
 
-      <form action="">
+      <form class="mt-20" action="">
         <p>Passenger Name*</p>
          <input class="w-[433px] h-[64] p-4 border" type="text" placeholder="Enter your name"> <br>
          <p>Phone Number*</p>
-         <input class="w-[433px] h-[64] p-4 border" type="text" placeholder="Enter your phone number">
+         <input class="w-[433px] h-[64] p-4 border" type="number" placeholder="Enter your phone number">
          <p>Email ID</p>
-         <input class="w-[433px] h-[64] p-4 border" type="text" placeholder="Enter your email id"> <br>
-         <button class="btn bg-green-400 w-[433px] h-[64] p-4 border">Next</button>
+         <input class="w-[433px] h-[64] p-4 border" type="email" placeholder="Enter your email id"> <br>
+         <button class="btn bg-green-400 w-[433px] h-[64] p-4 border text-white font-bold text-xl">Next</button>
+
+         <div class="flex gap-5">
+          <p class="underline"><a href="#">Terms and Conditions</a></p>
+          <p class="underline"><a href="#">Cancellation Policy</a></p>
+         </div>
+        
       </form>
     </div>
 
@@ -247,7 +229,7 @@
 
 <!-- footer section  -->
 
-<footer class="footer p-10 bg-base-200 text-base-content"> 
+<footer class="footer p-10 bg-base-200 text-base-content mt-20"> 
   <nav>
     <h6 class="footer-title">Services</h6> 
     <a class="link link-hover">Branding</a>
