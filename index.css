@@ -5,4 +5,16 @@
     color: white;
 }
 
- 
+.bus-seat{
+    width: 40%;
+}
+.discount-calculate{
+    width: 40%;
+    margin-left: 250px;
+}
+.wheel{
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+}
