@@ -12,16 +12,31 @@ function setSeatBackgroundColorById(elementId){
 //  }
 
 // Total Seat price calculation 
- function A1(textElementId){
+ function seatNumber(textElementId){
     const perSeatPrice = 550;
-    const seatQuantity = document.getElementById('textElementId');
+    const seatQuantity = document.getElementById(textElementId);
     const totalSeatPrice = seatQuantity*perSeatPrice;
-    console.log(totalSeatPrice);
-
 
     const calculateAreaSpan = document.getElementById('calculate-area');
     calculateAreaSpan.innerText = totalSeatPrice;
-    
- }
+    console.log(totalSeatPrice);
 
- 
+
+
+  }
+
+  function selectedArea(){
+   const selectedAreaSpan = document.getElementById('seleced-area');
+selectedAreaSpan.value;
+console.log(selectedAreaSpan);
+
+
+
+}
+
+// let sum = 0;
+// for(let i = 0; i<=10; i++){
+//    sum = sum + i;
+//    console.log(selectedArea);
+
+
