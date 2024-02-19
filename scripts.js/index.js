@@ -14,5 +14,9 @@ for (const seat of seats) {
         console.log(buttonValue);
         totalSeatPrice += 550;
         console.log(totalSeatPrice); 
+
+        const calculateAreaSpan = document.getElementById('calculate-area');
+        calculateAreaSpan.innerText = totalSeatPrice;
+        console.log(totalSeatPrice);
     })
 }
