@@ -159,12 +159,13 @@
     <kbd class="kbd m-5 p-3"><img src="./images/wheel.png" alt="" srcset=""></kbd>
   </div>
   <div class=" flex">
-  <div class="bus-seat justify-center  grid grid-cols-4">
-    <kbd id="A1" class="kbd m-5">A1</kbd>
-    <kbd id="A2" class="kbd m-5">A2</kbd>
-    <kbd id="A3" class="kbd m-5">A3</kbd>
-    <kbd id="A4" class="kbd m-5">A4</kbd>  
-    <kbd id="B1" class="kbd m-5">B1</kbd>
+  <div id="bus-seat" class="bus-seat justify-center  grid grid-cols-4">
+    <kbd onclick="seatColorA1()" id="A1" class="kbd m-5">A1</kbd>
+    <kbd onclick="seatColorA2()" id="A2" class="kbd m-5">A2</kbd>
+    <kbd onclick="seatColorA3()" id="A3" class="kbd m-5">A3</kbd>
+    <kbd onclick="seatColorA4()" id="A4" class="kbd m-5">A4</kbd>
+    <kbd onclick="seatColorA5()" id="A5" class="kbd m-5">A5</kbd>  
+    <!-- <kbd id="B1" class="kbd m-5">B1</kbd>
     <kbd id="B2" class="kbd m-5">B2</kbd>
     <kbd id="B3" class="kbd m-5">B3</kbd>
     <kbd id="B4" class="kbd m-5">B4</kbd>  
@@ -179,7 +180,7 @@
     <kbd id="E1" class="kbd m-5">E1</kbd>
     <kbd id="E2" class="kbd m-5">E2</kbd>
     <kbd id="E3" class="kbd m-5">E3</kbd>
-    <kbd id="E4" class="kbd m-5">E4</kbd>
+    <kbd id="E4" class="kbd m-5">E4</kbd> -->
 
      
   </div>
@@ -191,12 +192,20 @@
         <p>Seat</p>
         <p>Class</p>
         <p>Price</p>
-      </div> <hr>
+      </div> 
+      <hr>
       <div class="flex justify-between w-[433px] font-extrabold font-semibold">
-        <p>C2</p>
+        <p id="seat-number">_</p>
         <p>Economoy</p>
-        <p>550</p>
+        <p>0</p>
       </div>
+       <hr class="font-extrabold">
+      <div class="flex justify-between w-[433px] font-extrabold font-semibold">
+        <p id="seat-number" class="font-extrabold">Grand Total</p>
+        <p></p>
+        <p  class="font-extrabold">0</p>
+      </div>
+
 
       <form class="mt-20" action="">
         <p>Passenger Name*</p>
