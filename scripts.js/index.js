@@ -18,5 +18,7 @@ for (const seat of seats) {
         const calculateAreaSpan = document.getElementById('calculate-area');
         calculateAreaSpan.innerText = totalSeatPrice;
         console.log(totalSeatPrice);
+
+        setSeatBackgroundColorById(seat);
     })
 }
