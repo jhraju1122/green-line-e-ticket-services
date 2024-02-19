@@ -19,6 +19,46 @@ for (const seat of seats) {
         calculateAreaSpan.innerText = totalSeatPrice;
         console.log(totalSeatPrice);
 
-        setSeatBackgroundColorById(seat);
     })
 }
+
+
+
+// selected area display, how much tickets are selected
+const seatsCount = document.getElementsByClassName('kbd');
+console.log(seats);
+let totalSeatNumber = 0;
+for (const seat of seats) {
+    seat.addEventListener('click', function(event){
+        const buttonValue = event.target.innerText;
+        console.log(buttonValue);
+        totalSeatNumber += 1;
+        console.log(totalSeatNumber);
+
+        const selectedAreaSpan = document.getElementById('seleced-area');
+        selectedAreaSpan.innerText  = totalSeatNumber;
+        console.log(totalSeatNumber);
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Selected area 
+ const selectedArea = document.getElementById('seleced-area');
+ let selectedAreaInitialValue =0;
+ selectedArea.addEventListener('click', function(){
+selectedAreaInitialValue += 1
+selectedArea.innerText =selectedAreaInitialValue;
+console.log(selectedAreaInitialValue);
+ })
