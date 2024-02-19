@@ -9,6 +9,7 @@ function  A1(){
 // show inner text
  
  }
+
  
 function  A2(){
     setSeatBackgroundColorById('A2');
