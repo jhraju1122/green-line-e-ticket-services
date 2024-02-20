@@ -29,3 +29,16 @@
     color: aliceblue;
     font-weight: 800;
  }
+ .seats-left{
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+ }
+ #seats-left{
+    font-size: 30px;
+     
+    font-weight: 800;
+ 
+margin-left: 10px;
+
+ }

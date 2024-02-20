@@ -43,22 +43,22 @@ for (const seat of seats) {
 
 
 
+// selected area left, display, how much tickets are available
+const seatsleft = document.getElementsByClassName('kbd');
+console.log(seats);
+let totalSeatsNumber = 30;
+for (const seat of seats) {
+    seat.addEventListener('click', function(event){
+        const buttonValue = event.target.innerText;
+        console.log(buttonValue);
+        totalSeatsNumber -= 1;
+        console.log(totalSeatsNumber);
 
+        const seatsLeftAreaSpan = document.getElementById('seats-left');
+        seatsLeftAreaSpan.innerText = totalSeatsNumber;
+        console.log(totalSeatNumber);
+    })
+    
+}
 
-
-
-
-
-
-
-
-
-
-// Selected area 
- const selectedArea = document.getElementById('seleced-area');
- let selectedAreaInitialValue =0;
- selectedArea.addEventListener('click', function(){
-selectedAreaInitialValue += 1
-selectedArea.innerText =selectedAreaInitialValue;
-console.log(selectedAreaInitialValue);
- })
+  
