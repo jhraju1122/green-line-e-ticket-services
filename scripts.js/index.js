@@ -7,12 +7,12 @@
 
 const seats =document.getElementsByClassName('kbd');
 console.log(seats);
-let totalSeatPrice = 0;
+let totalSeatPrice =0;
 for (const seat of seats) {
     seat.addEventListener('click', function(event){
         const buttonValue = event.target.innerText;
         console.log(buttonValue);
-        totalSeatPrice += 550;
+        totalSeatPrice +=550;
         console.log(totalSeatPrice); 
 
         const calculateAreaSpan = document.getElementById('calculate-area');
@@ -21,7 +21,6 @@ for (const seat of seats) {
 
     })
 }
-
 
 
 // selected area display, how much tickets are selected
@@ -38,11 +37,13 @@ for (const seat of seats) {
         const selectedAreaSpan = document.getElementById('seleced-area');
         selectedAreaSpan.innerText  = totalSeatNumber;
         console.log(totalSeatNumber);
+
+         
     })
 }
 
 
-
+ 
 // selected area left, display, how much tickets are available
 const seatsleft = document.getElementsByClassName('kbd');
 console.log(seats);
@@ -62,3 +63,20 @@ for (const seat of seats) {
 }
 
   
+
+// Disable button to able -------------
+
+document.getElementById('phoneInput').addEventListener("input", function(){
+
+    let phoneInputValue = this.value ;
+    let nextButton = document.getElementById("next-button");
+
+    // if phone input is not empty, then the next button will be Able ---
+    if(phoneInputValue.trim() !== ""){
+        nextButton.disabled = false; //button will be able now
+    }
+    else{
+        nextButton.disabled = true; //button will not be able now
+    }
+
+})

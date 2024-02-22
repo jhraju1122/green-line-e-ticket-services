@@ -228,13 +228,13 @@
         <p>Passenger Name*</p>
          <input class="w-[433px] h-[64] p-4 border" type="text" placeholder="Enter your name"> <br>
          <p>Phone Number*</p>
-         <input class="w-[433px] h-[64] p-4 border" type="number" placeholder="Enter your phone number">
+         <input id="phoneInput" class="w-[433px] h-[64] p-4 border" type="number" placeholder="Enter your phone number">
          <p>Email ID</p>
          <input class="w-[433px] h-[64] p-4 border" type="email" placeholder="Enter your email id"> <br>
  
 
 <!-- Next button Modal --------------- -->
-<button class="btn bg-green-400 w-[433px] h-[64] p-4 text-white font-bold text-xl mb-10 mt-2" onclick="my_modal_1.showModal()">Next</button>
+<button id="next-button" class="btn bg-green-400 w-[433px] h-[64] p-4 text-white font-bold text-xl mb-10 mt-2" onclick="my_modal_1.showModal()" disabled>Next</button>
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box">
     
